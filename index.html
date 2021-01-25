@@ -1,74 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
 
-    <link rel="stylesheet" href="css/materialize.min.css">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/materialize.min.css" />
+    <link rel="stylesheet" href="css/login.css" />
 
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-2.1.1.min.js"
+    ></script>
     <script src="js/materialize.min.js"></script>
+  </head>
 
-
-</head>
-
-<body class="container ">
+  <body class="container">
     <div class="center mt-30">
+      <!-- Modal Trigger -->
+      <a class="waves-effect waves-light btn modal-trigger" href="#login-modal">
+        Login!
+      </a>
 
-        <!-- Modal Trigger -->
-        <a class="waves-effect waves-light btn modal-trigger" href="#login-modal"> 
-			Login! 
-		</a>
-
-        <!-- Modal Structure -->
-        <div id="login-modal" class="modal bg_login">
-            <div class="modal-content">
-                <div class="logo">
-                    <a href="index.html"><img src="img/logo.svg" /></a>
+      <!-- Modal Structure -->
+      <div id="login-modal" class="modal bg_login">
+        <div class="modal-content">
+          <div class="logo">
+            <a href="index.html"><img src="img/logo.svg" /></a>
+          </div>
+          <div class="login_body">
+            <div class="">
+              <div class="login_form">
+                <div class="login_text">
+                  <h1>Welcome.</h1>
+                  <p>Please, have a nice day</p>
                 </div>
-                <div class="login_body">
-                    <div class="login_row">
-                        <div class="col1">
-                            <div class="login_text">
-                                <h1>Welcome.</h1>
-                                <p>Please, have a nice day</p>
-                            </div>
-                        </div>
-                        <div class="col2">
-                            <div class="login_form">
-                                <form>
-                                    <div class="input-field">
-                                        <i class="material-icons prefix">person</i>
-                                        <input id="icon_prefix" type="text" class="validate" placeholder="Username" required>
-                                    </div>
-                                    <div class="input-field">
-                                        <i class="material-icons prefix">lock</i>
-                                        <input id="password" type="password" class="validate" placeholder="Password" required>
-                                    </div>
-                                    <button type="submit" class="login_btn">LOGIN</button>
-                                </form>
+                <form>
+                  <div class="input-field">
+                    <i class="material-icons prefix">person</i>
+                    <input
+                      id="icon_prefix"
+                      type="text"
+                      class="validate"
+                      placeholder="Username"
+                      required
+                    />
+                  </div>
+                  <div class="input-field">
+                    <i class="material-icons prefix">lock</i>
+                    <input
+                      id="password"
+                      type="password"
+                      class="validate"
+                      placeholder="Password"
+                      required
+                    />
+                  </div>
+                  <button type="submit" class="login_btn">LOGIN</button>
+                </form>
 
-                                <div class="login_form_footer">
-                                    <span class="forgot_pas"><a href="#">Forgot password?</a></span>
-                                    <span class="terms"><a href="#">Terms & Conditions</a></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="login_form_footer">
+                  <span class="forgot_pas"
+                    ><a href="#">Forgot password?</a></span
+                  >
+                  <span class="terms"><a href="#">Terms & Conditions</a></span>
                 </div>
+              </div>
             </div>
-
+          </div>
         </div>
+      </div>
     </div>
     <script>
-        $(document).ready(function() {
-            $('.modal').modal();
-        })
+      $(document).ready(function () {
+        $(".modal").modal();
+      });
     </script>
-</body>
-
+  </body>
 </html>
